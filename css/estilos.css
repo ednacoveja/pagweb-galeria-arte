@@ -114,8 +114,8 @@ body {
 .active{
     background-color: rgb(238, 220, 192);
 }
-/*fotos*/
 
+/*fotos*/
 
 h1 {
     font-weight: 400;
@@ -137,8 +137,6 @@ h1 {
     grid-gap: 10px;
     padding: 40px 0;
     overflow: hidden;
-
-
 }
 
 .galeria img {
@@ -212,6 +210,8 @@ h1 {
     margin: 50px;
 }
 
+/*responsive*/
+
 @media screen and (max-width:400px) {
     .galeria {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -279,6 +279,8 @@ h1 {
     font-size: 2rem;
     margin-left: 30%;
 }
+
+/*responsive*/
 
 @media screen and (max-width:400px) {
     .knowledge__container {
