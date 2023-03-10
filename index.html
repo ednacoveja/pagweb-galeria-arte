@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercedes Ovejero</title>
+    <link
+      rel="shortcut icon"
+      href="./images/logotipoMer32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav container">
+        <div class="nav__menu">
+          <a href="#logo"><img src="./images/logotipoMer32x32.png" /></a>
+          <article class="light-box" id="logo">
+            <a href="#logo"
+              ><img src="./images/logoGrande.png" class="galeria"
+            /></a>
+            <a href="#" class="close">x</a>
+          </article>
+        </div>
+
+        <p>Galería</p>
+
+        <ul class="nav__button nav__button==menu">
+          <li class="nav__items">
+            <a href="#" class="button active" id="all">Todo</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="button" id="pinturas">Pinturas</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="button" id="murales">Murales</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="button" id="nuevos medios">Nuevos Medios</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="button" id="grabados">Grabados</a>
+          </li>
+        </ul>
+
+        <ul class="nav__link nav__link==menu">
+          <li class="nav__items">
+            <a href="https://www.instagram.com/merovejero/" target="_blank">
+              <img src="./images/instagram.svg" class="about__icon"
+            /></a>
+          </li>
+          <li class="nav__items">
+            <a href="https://wa.link/z21ioe" target="_blank"
+              ><img src="./images/whatsapp.svg" class="about__icon"
+            /></a>
+          </li>
+          <li class="nav__items">
+            <a href="./bio.html">
+              <img src="./images/corazoncito.svg" class="about__icon" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="galeria">
+        <div class="product-item" id="murales">
+          <a href="#m1"> <img src="./images/murales/IMG1.jpg" alt="img" /></a>
+        </div>
+        <div class="product-item" id="murales">
+          <a href="#m2"><img src="./images/murales/IMG2.jpg" alt="img" /></a>
+        </div>
+
+        <div class="product-item" id="nuevos medios">
+          <a href="#nm1">
+            <img src="./images/nuevos medios/IMG1.jpg" alt="img" />
+          </a>
+        </div>
+        <div class="product-item" id="nuevos medios">
+          <a href="#nm2">
+            <img src="./images/nuevos medios/IMG2.jpg" alt="img" />
+          </a>
+        </div>
+        <div class="product-item" id="nuevos medios">
+          <a href="#nm3">
+            <img src="./images/nuevos medios/IMG3.jpg" alt="img" />
+          </a>
+        </div>
+        <div class="product-item" id="nuevos medios">
+          <a href="#nm4">
+            <img src="./images/nuevos medios/IMG4.jpg" alt="img" />
+          </a>
+        </div>
+      </section>
+
+      <article class="light-box" id="m1">
+        <a href="#nm4"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/murales/IMG1.jpg" alt="" />
+        <a href="#m2"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="#" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="m2">
+        <a href="#m1"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/murales/IMG2.jpg" alt="" />
+        <a href="#p1"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="p1">
+        <a href="#m2"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/pinturas/IMG1.jpg" alt="" />
+        <a href="#p2"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="p2">
+        <a href="#p1"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/pinturas/IMG2.jpg" alt="" />
+        <a href="#p3"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="p3">
+        <a href="#p2"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/pinturas/IMG3.jpg" alt="" />
+        <a href="#p4"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="p4">
+        <a href="#p3"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/pinturas/IMG4.jpg" alt="" />
+        <a href="#p5"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="p5">
+        <a href="#p4"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/pinturas/IMG5.jpg" alt="" />
+        <a href="#nm1"
+          ><img src="./images/right-arrow.svg" class="flechas"
+        /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="nm1">
+        <a href="#p5"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/nuevos medios/IMG1.jpeg" alt="" />
+        <a href="#nm2"
+          ><img src="./images/right-arrow.svg" class="flechas"
+        /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="nm2">
+        <a href="#nm1"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/nuevos medios/IMG2.jpeg" alt="" />
+        <a href="#nm3"
+          ><img src="./images/right-arrow.svg" class="flechas"
+        /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="nm3">
+        <a href="#nm2"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/nuevos medios/IMG3.jpeg" alt="" />
+        <a href="#nm4"
+          ><img src="./images/right-arrow.svg" class="flechas"
+        /></a>
+        <a href="" class="close">x</a>
+      </article>
+
+      <article class="light-box" id="nm4">
+        <a href="#nm3"><img src="./images/left-arrow.svg" class="flechas" /></a>
+        <img src="./images/nuevos medios/IMG4.jpeg" alt="" />
+        <a href="#m1"><img src="./images/right-arrow.svg" class="flechas" /></a>
+        <a href="" class="close">x</a>
+      </article>
+    </main>
+  </body>
+  <script>
+    for (let i = 0; i < 5; i++) {
+      var newDiv = document.createElement("div");
+      var newA = document.createElement("a");
+      var newI = document.createElement("img");
+      newI.src = `./images/pinturas/IMG${i + 1}.jpg`;
+      newA.href = "#p" + (i + 1);
+      newDiv.id = "pinturas";
+      newDiv.className = "product-item";
+      newA.appendChild(newI);
+      newDiv.appendChild(newA);
+      document.getElementsByClassName("galeria")[1].appendChild(newDiv);
+    }
+    console.log(document.getElementsByClassName("galeria"));
+  </script>
+</html>

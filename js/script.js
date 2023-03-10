@@ -7,10 +7,10 @@ $(function () {
 });
 
 $(document).ready(function () {
-  $('nav__button .button[category="all"]').addClass("ct_item-active");
+  $('nav__button .button[id="all"]').addClass("ct_item-active");
 
   $(".button").click(function () {
-    var catProduct = $(this).attr("category");
+    var catProduct = $(this).attr("id");
     console.log(catProduct);
 
     $(".button").removeClass("ct_item-active");
@@ -23,8 +23,8 @@ $(document).ready(function () {
     setTimeout(hideProduct, 400);
 
     function showProduct() {
-      $('.product-item[category="' + catProduct + '"]').show();
-      $('.product-item[category="' + catProduct + '"]').css(
+      $('.product-item[id="' + catProduct + '"]').show();
+      $('.product-item[id="' + catProduct + '"]').css(
         "transform",
         "scale(1)"
       );
@@ -32,9 +32,7 @@ $(document).ready(function () {
     setTimeout(showProduct, 400);
   });
 
-  // MOSTRANDO TODOS LOS PRODUCTOS =======================
-
-  $('.button[category="all"]').click(function () {
+  $('.button[id="all"]').click(function () {
     function showAll() {
       $(".product-item").show();
       $(".product-item").css("transform", "scale(1)");
@@ -42,3 +40,4 @@ $(document).ready(function () {
     setTimeout(showAll, 400);
   });
 });
+
