@@ -71,135 +71,79 @@
     </header>
 
     <main>
-      <section class="galeria">
-        <div class="product-item" id="murales">
-          <a href="#m1"> <img src="./images/murales/IMG1.jpg" alt="img" /></a>
-        </div>
-        <div class="product-item" id="murales">
-          <a href="#m2"><img src="./images/murales/IMG2.jpg" alt="img" /></a>
-        </div>
-
-        <div class="product-item" id="nuevos medios">
-          <a href="#nm1">
-            <img src="./images/nuevos medios/IMG1.jpg" alt="img" />
-          </a>
-        </div>
-        <div class="product-item" id="nuevos medios">
-          <a href="#nm2">
-            <img src="./images/nuevos medios/IMG2.jpg" alt="img" />
-          </a>
-        </div>
-        <div class="product-item" id="nuevos medios">
-          <a href="#nm3">
-            <img src="./images/nuevos medios/IMG3.jpg" alt="img" />
-          </a>
-        </div>
-        <div class="product-item" id="nuevos medios">
-          <a href="#nm4">
-            <img src="./images/nuevos medios/IMG4.jpg" alt="img" />
-          </a>
-        </div>
-      </section>
-
-      <article class="light-box" id="m1">
-        <a href="#nm4"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/murales/IMG1.jpg" alt="" />
-        <a href="#m2"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="#" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="m2">
-        <a href="#m1"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/murales/IMG2.jpg" alt="" />
-        <a href="#p1"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="p1">
-        <a href="#m2"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/pinturas/IMG1.jpg" alt="" />
-        <a href="#p2"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="p2">
-        <a href="#p1"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/pinturas/IMG2.jpg" alt="" />
-        <a href="#p3"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="p3">
-        <a href="#p2"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/pinturas/IMG3.jpg" alt="" />
-        <a href="#p4"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="p4">
-        <a href="#p3"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/pinturas/IMG4.jpg" alt="" />
-        <a href="#p5"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="p5">
-        <a href="#p4"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/pinturas/IMG5.jpg" alt="" />
-        <a href="#nm1"
-          ><img src="./images/right-arrow.svg" class="flechas"
-        /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="nm1">
-        <a href="#p5"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/nuevos medios/IMG1.jpeg" alt="" />
-        <a href="#nm2"
-          ><img src="./images/right-arrow.svg" class="flechas"
-        /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="nm2">
-        <a href="#nm1"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/nuevos medios/IMG2.jpeg" alt="" />
-        <a href="#nm3"
-          ><img src="./images/right-arrow.svg" class="flechas"
-        /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="nm3">
-        <a href="#nm2"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/nuevos medios/IMG3.jpeg" alt="" />
-        <a href="#nm4"
-          ><img src="./images/right-arrow.svg" class="flechas"
-        /></a>
-        <a href="" class="close">x</a>
-      </article>
-
-      <article class="light-box" id="nm4">
-        <a href="#nm3"><img src="./images/left-arrow.svg" class="flechas" /></a>
-        <img src="./images/nuevos medios/IMG4.jpeg" alt="" />
-        <a href="#m1"><img src="./images/right-arrow.svg" class="flechas" /></a>
-        <a href="" class="close">x</a>
-      </article>
+      <section class="galeria"></section>
+      <div class="flechas"></div>
     </main>
   </body>
   <script>
-    for (let i = 0; i < 5; i++) {
-      var newDiv = document.createElement("div");
-      var newA = document.createElement("a");
-      var newI = document.createElement("img");
-      newI.src = `./images/pinturas/IMG${i + 1}.jpg`;
-      newA.href = "#p" + (i + 1);
-      newDiv.id = "pinturas";
-      newDiv.className = "product-item";
-      newA.appendChild(newI);
-      newDiv.appendChild(newA);
-      document.getElementsByClassName("galeria")[1].appendChild(newDiv);
+    function renderizar(categoria) {
+      for (let i = 0; i < 13; i++) {
+        var newDiv = document.createElement("div");
+        var newA = document.createElement("a");
+        var newI = document.createElement("img");
+        newI.src = `./images/${categoria}/IMG${i + 1}.jpeg`;
+        newA.href = "#" + categoria + (i + 1);
+        newDiv.id = categoria;
+        newDiv.className = "product-item";
+        newA.appendChild(newI);
+        newDiv.appendChild(newA);
+        document.getElementsByClassName("galeria")[1].appendChild(newDiv);
+      }
     }
-    console.log(document.getElementsByClassName("galeria"));
+    renderizar("nuevos medios");
+    renderizar("grabados");
+    renderizar("pinturas");
+    renderizar("murales")
+  </script>
+  <script>
+    function moveFlechas(categoria) {
+      for (let i = 0; i < 13; i++) {
+        var newArticle = document.createElement("article");
+        var newAiz = document.createElement("a");
+        var newIz = document.createElement("img");
+        var newIp = document.createElement("img");
+        var newAder = document.createElement("a");
+        var newIder = document.createElement("img");
+        var newAclose = document.createElement("a");
+
+        newArticle.className = "light-box";
+        newArticle.id = categoria + (i + 1);
+        newAiz.href = "#" + categoria + (i - 1);
+        newIz.src = "./images/left-arrow.svg";
+        newIz.className = "flechas";
+        newIp.src = `./images/${categoria}/IMG${i + 1}.jpeg`;
+        newAder.href = "#" + categoria + (i + 2);
+        newIder.src = "./images/right-arrow.svg";
+        newIder.className = "flechas";
+        newAclose.href = "";
+        newAclose.text = "x";
+        newAclose.className = "close";
+
+        newAiz.appendChild(newIz);
+        newAder.appendChild(newIder);
+        newArticle.appendChild(newAiz);
+        newArticle.appendChild(newIp)
+        newArticle.appendChild(newAder)
+        newArticle.appendChild(newAclose)
+        document.getElementsByClassName("flechas")[0].appendChild(newArticle);
+      }
+    }
+    
+   
+    moveFlechas("nuevos medios");
+    moveFlechas("grabados");
+    moveFlechas("pinturas");
+    moveFlechas("murales")
   </script>
 </html>
+
+<article class="light-box" id="nm3">
+  <a href="#nm2"
+    ><img src="./images/left-arrow.svg" class="flechas"
+  /></a>
+  <img src="./images/nuevos medios/IMG3.jpg" alt="" />
+  <a href="#nm4"
+    ><img src="./images/right-arrow.svg" class="flechas"
+  /></a>
+  <a href="" class="close">x</a>
+</article>
